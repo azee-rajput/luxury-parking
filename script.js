@@ -1,10 +1,18 @@
 var path
+var active;
 
 
-
-function parking(src){
+function parking(src, element){
     let checked = document.getElementById("lights").checked;
     let lights;
+    if(element!==undefined){
+        element.classList.add("activeLink");
+        if(active!==undefined){
+            active.classList.remove("activeLink");
+            active.className = active.className.replace(/\bmystyle\b/g, "");
+        }
+        active = element;
+    }
     if(checked){
         lights = "Light-yes";
     }else{
@@ -18,15 +26,11 @@ function lights(){
     if(path===undefined){
         path = "/L/l_frame.jpg";
     }
-    parking(path)
+    parking(path, undefined)
 }
 
 function hide(){
     let sidebarsCheck = document.getElementById("hide").checked;
-    // let sidebars = document.getElementsByClassName("sidebars")
-    // console.log(sidebars.style.display)
-
-    // for (let el of document.querySelectorAll('.sidebars')) el.style.visibility = 'hidden';
     if(sidebarsCheck){
         for (let el of document.querySelectorAll('.sidebars')) el.style.display = 'none';
     }else{

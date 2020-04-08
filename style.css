@@ -16,7 +16,7 @@ html, body{
 
 
 #navigation{
-background: rgba(0, 0, 0, 0.7);
+background: rgba(0, 0, 0, 0.3);
 }
 
 #togglebtn .navbar-toggler-icon {
@@ -94,60 +94,67 @@ background: rgba(0, 0, 0, 0.7);
 }
 
 .leftbar, .rightbar{
-    /* margin: 5px; */
     min-height: 50vh;
     width: 100%;
+    color: white;
 }
 
 .side-top, .side-bottom{
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.3);
-    color: white;
-    /* line-height: 1em; */
 }
 
 .side-top h3{
     line-height: 1em;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 0;
 }
 
-#greenHead{
-    color: green;
+.bgAlpha{
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+    padding: 5px;
+    color: white;
 }
 
-
-#color-dots{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
+a:focus, a:active{
+    background: rgba(255, 255, 255, 0.3);
+}
+.activeLink{
+    background: black;
 }
 
-.circular-color {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    display: inline-block;
+.sideLink{
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
 }
 
-#one{
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #000000, #222222, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #000000, #222222, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+.sideLink:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 
-#two{
-    background: #888888;
-    background: -webkit-linear-gradient(to right, #888888, #ededed, #888888);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #888888, #ededed, #888888); 
+.sideLink:active, .sideLink:focus {
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    background: black;
 }
 
-#three{
-    background:#ffffff;
-    background: -webkit-linear-gradient(to right, #cccccc, #ffffff, #cccccc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #cccccc, #ffffff, #cccccc); 
+.bgAlpha:hover{
+    transition: 0.3s;
+}
+
+.sidebar-wrapper:not(:first-child){
+    margin-top: 10px;
+}
+
+.sidebar-wrapper h5{
+    font-weight: bold;
 }
 
 table{
