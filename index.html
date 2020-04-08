@@ -74,31 +74,34 @@
 
                 <div class="row justify-content-between sidebars">
                     <div class="col-2 leftbar">
-                        <div class="side-top">
-                          <h3 id="greenHead">AREOLUX</h3>
-                          <span id="areolux">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Praesent id libero ac mi iaculis lobortis a id ligula.
-                          </span>
-
-                          <h3>AXIS</h3>
-                          <span id="axis">
-                            Aenean sodales nisi elementum velit hendrerit bibendum.
-                            Donec pretium odio in nisi lobortis sagittis.
-                          </span>
-
-                          <h3>QUATTRO</h3>
-                          <span id="quattro">
-                            Donec pretium odio in nisi lobortis sagittis. 
-                            Aliquam vel libero efficitur, hendrerit lorem eu,
-                          </span>
+                      <div class="sidebar-wrapper">
+                        <div class="list-group list-group-flush">
+                          <h5 class="list-group-item bgAlpha">Large Parking</h5>
+                          <span class="list-group-item sideLink bgAlpha" id="large1" onclick="parking('/L/l_frame.jpg',this)" >Parking with Frame</span>
+                          <span class="list-group-item sideLink bgAlpha" id="large2" onclick="parking('/L/l_h_frame.jpg',this)" >Horizontal Sliding with Frame</span>
+                          <span class="list-group-item sideLink bgAlpha" id="large3" onclick="parking('/L/l_h_no_frame.jpg',this)" >Horizontal Sliding without Frame</span>
+                          <span class="list-group-item sideLink bgAlpha" id="large4" onclick="parking('/L/l_v.jpg',this)" >Vertical Sliding with Frame</span>
                         </div>
-                        <br/>
-                        <div class="side-bottom" id="color-dots">
-                            <div class="circular-color" id="one"></div>
-                            <div class="circular-color" id="two"></div>
-                            <div class="circular-color" id="three"></div>
+                      </div>
+
+                      <div class="sidebar-wrapper">
+                        <div class="list-group list-group-flush">
+                          <h5 class="list-group-item bgAlpha">Medium Parking</h5>
+                          <span class="list-group-item sideLink bgAlpha" id="medium1" onclick="parking('/M/m_frame.jpg',this)" >Parking with Frame</span>
+                          <span class="list-group-item sideLink bgAlpha" id="medium2" onclick="parking('/M/m_h_frame.jpg',this)" >Horizontal Sliding with Frame</span>
+                          <span class="list-group-item sideLink bgAlpha" id="medium3" onclick="parking('/M/m_h_no_frame.jpg',this)" >Horizontal Sliding without Frame</span>
+                          <span class="list-group-item sideLink bgAlpha" id="medium4" onclick="parking('/M/m_v.jpg',this)" >Vertical Sliding with Frame</span>
                         </div>
+                      </div>
+
+                      <div class="sidebar-wrapper">
+                        <div class="list-group list-group-flush">
+                          <h5 class="list-group-item bgAlpha">Small Parking</h5>
+                          <span class="list-group-item sideLink bgAlpha" id="small1" onclick="parking('/S/s_frame.jpg',this)">Parking with Frame</span>
+                          <span class="list-group-item sideLink bgAlpha" id="small2" onclick="parking('/S/s_v_1.jpg',this)" >Vertical Sliding type 1</span>
+                          <span class="list-group-item sideLink bgAlpha" id="small3" onclick="parking('/S/s_v_2.jpg',this)" >Vertical Sliding type 2</span>
+                        </div>
+                      </div>
                     </div>
     
                     <div class="col-2 rightbar">
@@ -141,8 +144,7 @@
                            Donec pretium odio in nisi lobortis sagittis. 
                           Aliquam vel libero efficitur, hendrerit lorem eu,
                           condimentum ante. Etiam convallis aliquet erat at molestie.
-                          Cras non odio eros. Pellentesque a sodales odio, nec facilisis velit. 
-                          Aenean aliquet congue imperdiet.
+                          Cras non odio eros.
                       </div>
                     </div>
                 </div>
