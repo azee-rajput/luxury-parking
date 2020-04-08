@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Luxury Parking</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"> 
+         <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="wrapper">
+        <!-- navbar start -->
+        <nav id="navigation" class="navbar navbar-expand-lg">
+            <a id="brand" href="./index.html">Luxury Car Park</a>
+            <button class="navbar-toggler" type="button" id="togglebtn" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="type" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Large
+                    </a>
+                    <div id="typeRadio" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" id="large1" onclick="parking('/L/l_frame.jpg')" href="#">Parking with Frame</a>
+                      <a class="dropdown-item" id="large2" onclick="parking('/L/l_h_frame.jpg')" href="#">Horizontal Sliding with Frame</a>
+                      <a class="dropdown-item" id="large3" onclick="parking('/L/l_h_no_frame.jpg')" href="#">Horizontal Sliding without Frame</a>
+                      <a class="dropdown-item" id="large4" onclick="parking('/L/l_v.jpg')" href="#">Vertical Sliding with Frame</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="light" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Medium
+                    </a>
+                    <div id="lightRadio" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" id="medium1" onclick="parking('/M/m_frame.jpg')" href="#">Parking with Frame</a>
+                      <a class="dropdown-item" id="medium2" onclick="parking('/M/m_h_frame.jpg')" href="#">Horizontal Sliding with Frame</a>
+                      <a class="dropdown-item" id="medium3" onclick="parking('/M/m_h_no_frame.jpg')" href="#">Horizontal Sliding without Frame</a>
+                      <a class="dropdown-item" id="medium4" onclick="parking('/M/m_v.jpg')" href="#">Vertical Sliding with Frame</a>
+                    </div>
+                  </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="size" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Small
+                  </a>
+                  <div id="sizeRadio" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" id="small1" onclick="parking('/S/s_frame.jpg')" href="#">Parking with Frame</a>
+                    <a class="dropdown-item" id="small2" onclick="parking('/S/s_v_1.jpg')" href="#">Vertical Sliding type 1</a>
+                    <a class="dropdown-item" id="small3" onclick="parking('/S/s_v_2.jpg')" href="#">Vertical Sliding type 2</a>
+                  </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <input type="checkbox"  id="lights" checked="checked" onclick="lights()">
+                  <label id="checkLabel"  for="lights">Lights</label>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <input type="checkbox"  id="hide" onclick="hide()">
+                  <label id="hideLabel"  for="hide" style="color: white;">hide the side bars</label>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- navbar end -->
+        
+            <div class="container-fluid main">
+                <img id="parkingImage" src="images/Light-yes/L/l_frame.jpg" width="100%" height="auto" alt="Parking"/>
+
+                <div class="row justify-content-between sidebars">
+                    <div class="col-2 leftbar">
+                        <div class="side-top">
+                          <h3 id="greenHead">AREOLUX</h3>
+                          <span id="areolux">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent id libero ac mi iaculis lobortis a id ligula.
+                          </span>
+
+                          <h3>AXIS</h3>
+                          <span id="axis">
+                            Aenean sodales nisi elementum velit hendrerit bibendum.
+                            Donec pretium odio in nisi lobortis sagittis.
+                          </span>
+
+                          <h3>QUATTRO</h3>
+                          <span id="quattro">
+                            Donec pretium odio in nisi lobortis sagittis. 
+                            Aliquam vel libero efficitur, hendrerit lorem eu,
+                          </span>
+                        </div>
+                        <br/>
+                        <div class="side-bottom" id="color-dots">
+                            <div class="circular-color" id="one"></div>
+                            <div class="circular-color" id="two"></div>
+                            <div class="circular-color" id="three"></div>
+                        </div>
+                    </div>
+    
+                    <div class="col-2 rightbar">
+                      <div class="side-top">
+                        <h3>Bill</h3>
+                        <table>
+                          <tr>
+                            <td>Model</td>
+                            <td>SUV</td>
+                          </tr>
+                          <tr>
+                            <td>sample</td>
+                            <td class="amount">sample</td>
+                          </tr>
+                          <tr>
+                            <td>sample</td>
+                            <td class="amount">sample</td>
+                          </tr>
+                          <tr>
+                            <td>sample</td>
+                            <td class="amount">sample</td>
+                          </tr>
+                          <tr>
+                            <td>sample</td>
+                            <td class="amount">sample</td>
+                          </tr>
+                          <tr>
+                            <td>sample</td>
+                            <td class="amount">sample</td>
+                          </tr>
+                        </table>
+                        <br/>
+                        <span id="total">total</span>
+                      </div>
+                      <br/>
+                      <div class="side-bottom">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Praesent id libero ac mi iaculis lobortis a id ligula.
+                          Aenean sodales nisi elementum velit hendrerit bibendum.
+                           Donec pretium odio in nisi lobortis sagittis. 
+                          Aliquam vel libero efficitur, hendrerit lorem eu,
+                          condimentum ante. Etiam convallis aliquet erat at molestie.
+                          Cras non odio eros. Pellentesque a sodales odio, nec facilisis velit. 
+                          Aenean aliquet congue imperdiet.
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+    </body>
+</html>

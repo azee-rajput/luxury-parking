@@ -1,0 +1,162 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+#wrapper{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("l_no_light_h_frame.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    /* position: relative; */
+    /* z-index: 1; */
+}
+
+
+#navigation{
+background: rgba(0, 0, 0, 0.7);
+}
+
+#togglebtn .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  #togglebtn{
+      border: 1px solid white;
+  }
+
+
+#brand{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+#brand:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#type, #light, #size{
+    color: white;
+    transition: .3s;
+    padding: 5px;
+}
+
+/* #navbarNavDropdown ul{
+    display: flex;
+    justify-content: space-around;
+
+} */
+
+.navbar-nav > li{
+    margin-left:30px;
+    margin-right:30px;
+  }
+
+  #checkLabel{
+      color: white;
+  }
+
+/* .myRadio{
+    display: block;
+} */
+
+.main{
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height:100%;
+}
+
+/* #parkingImage{
+    position: fixed;
+    top: 50px;
+} */
+
+.sidebars{
+     width: 100%;
+     padding-left: 15px;
+     top:50px;
+     position: absolute;
+     display: flex;
+}
+
+.leftbar, .rightbar{
+    /* margin: 5px; */
+    min-height: 50vh;
+    width: 100%;
+}
+
+.side-top, .side-bottom{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    /* line-height: 1em; */
+}
+
+.side-top h3{
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#greenHead{
+    color: green;
+}
+
+
+#color-dots{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.circular-color {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#one{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #222222, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #222222, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+#two{
+    background: #888888;
+    background: -webkit-linear-gradient(to right, #888888, #ededed, #888888);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #888888, #ededed, #888888); 
+}
+
+#three{
+    background:#ffffff;
+    background: -webkit-linear-gradient(to right, #cccccc, #ffffff, #cccccc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cccccc, #ffffff, #cccccc); 
+}
+
+table{
+    width: 100%;
+}
+
+table td:first-child{
+    width: 20%;
+}
+.amount{
+    text-align: right;
+}
